@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  /* Colors -- Primary */
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* Colors -- Neutral */
+  --veryDarkBlue-body: hsl(217, 54%, 11%);
+  --veryDarkBlue-card: hsl(216, 50%, 16%);
+  --veryDarkBlue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Fontfamily */
+  font-family: "Outfit", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--veryDarkBlue-body);
+  padding-top: 10rem;
+}
+
+.card {
+  height: 542px;
+  width: 327px;
+  background-color: var(--veryDarkBlue-card);
+  margin: 0 auto;
+  border-radius: 17px;
+  padding: 24px;
+}
+
+.card__image {
+  max-height: 277px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 22px;
+}
+
+/* Description Style -- Main Part */
+.card__info {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--veryDarkBlue-line);
+}
+
+.cripto__name {
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.cripto__description {
+  color: var(--white);
+  font-weight: 50;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.transaction__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.amount {
+  display: flex;
+  color: var(--cyan);
+  align-items: center;
+}
+
+.amount p {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.days-left {
+  display: flex;
+  align-items: center;
+  color: var(--softBlue);
+}
+
+.days-left p {
+  margin-left: 7px;
+  font-weight: 100;
+}
+
+.card__footer {
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  max-height: 33px;
+  width: auto;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.credits {
+  color: var(--softBlue);
+  font-size: 14px;
+}
+
+.credits span {
+  color: var(--white);
+}

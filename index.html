@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: #fff;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <!-- Image -->
+      <img
+        src="./images/image-equilibrium.jpg"
+        alt="cristal cube"
+        class="card__image"
+      />
+
+      <section class="card__info">
+        <p class="cripto__name">Equilibrium #3429</p>
+        <p class="cripto__description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <!-- ETH amount & days left -->
+        <div class="transaction__details">
+          <!-- ETH amount -->
+          <div class="amount">
+            <img
+              src="./images/icon-ethereum.svg"
+              alt="ethereum-icon"
+              class="eth-icon"
+            />
+            <p class="eth-num">0.041 ETH</p>
+          </div>
+
+          <!-- days left -->
+          <div class="days-left">
+            <img
+              src="./images/icon-clock.svg"
+              alt="clock-icon"
+              class="time-icon"
+            />
+            <p class="days-num">3 days left</p>
+          </div>
+        </div>
+      </section>
+      <footer class="card__footer">
+        <img
+          src="./images/image-avatar.png"
+          alt="avatar-img"
+          class="profile-image"
+        />
+        <p class="credits">Creation of <span>Jules Wyvern</span></p>
+      </footer>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Tony Spunei</a>.
+    </div>
+  </body>
+</html>
